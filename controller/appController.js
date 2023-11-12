@@ -85,7 +85,7 @@ const getbill = (req, res) => {
   transport
     .sendMail(message)
     .then(() => {
-      returnres.status(201).json({
+      return res.status(201).json({
         msg: "you should receive an email",
       });
     })
